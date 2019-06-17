@@ -27,6 +27,7 @@
 body {
   font-family: 'Proxima Nova Light', serif;
   color: #262626;
+  min-width: 320px;
 }
 
 .button-o {
@@ -69,7 +70,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 80px;
 }
 
 .navbar__mobile, .navbar__landline {
@@ -107,8 +107,8 @@ body {
 }
 
 .menu_active {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .menu__nav {
@@ -192,5 +192,59 @@ body {
   font-family: 'Proxima Nova Semibold', serif;
   margin-bottom: 60px;
   display: block;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+  .hero {
+    background-size: cover;
+    background-position: left 32% top 60px;
+  }
+  .hero__title {
+    font-size: 1.58rem;
+    max-width: 250px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .button-o {
+    font-size: 10px;
+  }
+  .menu {
+    top: 60px;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__link {
+    margin-bottom: 20px;
+  }
+  .menu-button {
+    height: 60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
