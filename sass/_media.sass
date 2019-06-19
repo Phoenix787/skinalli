@@ -1,6 +1,9 @@
 @media all and (max-width: 1200px)
 	.container
 		max-width: 960px
+	.offer
+		&-block
+			background-position: center right -100px
 
 @media all and (max-width: 992px)
 	.container
@@ -8,7 +11,18 @@
 	.navbar
 		&__mobile, &__landline
 			display: none
-	
+	.offer
+		&-block
+			background-image: none
+			padding: 40px
+	.form
+		&__row
+			flex-direction: column
+			&-checkbox
+				flex-direction: row
+		&__input
+			border-right-width: 1px
+			margin-bottom: 15px
 
 @media all and (max-width: 768px)
 	.container
@@ -17,9 +31,25 @@
 	.hero
 		background-size: 100%
 		background-position: top right
+		padding: 40px 0
 		&__title
 			font-size: 1.58rem
 			max-width: 250px
+			margin-bottom: 20px
+		&__subtitle
+			margin-bottom: 30px
+	.offer
+		&-block
+			margin-top: -150px
+			&__title
+				font-size: 20px
+			&__subtitle
+				font-size: 17px
+		.form
+			&__input
+				height: 50px
+			&__button
+				height: auto
 
 @media all and (max-width: 576px)
 	.logo
