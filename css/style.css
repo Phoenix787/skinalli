@@ -32,7 +32,7 @@ body {
 
 .button-o {
   text-transform: uppercase;
-  background-color: transparent;
+  background-color: #fff;
   border: 2px solid #507fe1;
   padding: 17px 22px;
   cursor: pointer;
@@ -49,6 +49,11 @@ body {
   font-size: 12px;
   padding: 25px 45px;
   font-family: 'Proxima Nova Semibold', serif;
+  text-decoration: none;
+}
+
+.button-order {
+  background-color: #668fe5;
 }
 
 .bg-secondary {
@@ -59,6 +64,17 @@ body {
   height: 80px;
   padding: 15px 30px;
   border: 1px solid #dddddd;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Proxima Nova Semibold', serif;
 }
 
 .navbar {
@@ -295,6 +311,119 @@ body {
   top: -1px;
 }
 
+.features-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features__item {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.features__text {
+  font-size: 20px;
+  color: #000000;
+}
+
+.catalog-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog__item {
+  position: relative;
+  overflow: hidden;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  height: 125px;
+  margin-top: 30px;
+  -webkit-box-shadow: 1px 10px 21px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 10px 21px 0 rgba(0, 0, 0, 0.15);
+}
+
+.catalog__item:hover .catalog__buttons {
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.catalog__image {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -50px -48px;
+     object-position: -50px -48px;
+}
+
+.catalog__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: .25s;
+  transition: .25s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.catalog__button {
+  padding: 10px;
+  border: none;
+}
+
+.catalog__tag {
+  position: absolute;
+  font-size: 11px;
+  color: #ffffff;
+  text-transform: uppercase;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(80, 127, 225, 0.6);
+  padding: 10px;
+}
+
+.catalog__bottom {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.catalog__bottom a {
+  display: block;
+}
+
+.catalog__bottom span {
+  display: block;
+  margin-top: 30px;
+}
+
 @media all and (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -310,6 +439,12 @@ body {
   }
   .navbar__mobile, .navbar__landline {
     display: none;
+  }
+  .hero {
+    padding: 40px 0;
+  }
+  .offer {
+    padding-bottom: 60px;
   }
   .offer-block {
     background-image: none;
@@ -331,6 +466,14 @@ body {
     border-right-width: 1px;
     margin-bottom: 15px;
   }
+  .features {
+    padding: 50px 0;
+  }
+  .features__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-top: 20px;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -341,7 +484,6 @@ body {
   .hero {
     background-size: 100%;
     background-position: top right;
-    padding: 40px 0;
   }
   .hero__title {
     font-size: 1.58rem;
@@ -366,6 +508,13 @@ body {
   .offer .form__button {
     height: auto;
   }
+  .catalog {
+    padding: 40px 30px;
+  }
+  .catalog__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media all and (max-width: 576px) {
@@ -389,6 +538,13 @@ body {
   }
   .menu-button {
     height: 60px;
+  }
+  .features__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .catalog {
+    padding: 40px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

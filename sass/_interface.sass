@@ -6,7 +6,7 @@ body
 
 .button-o
 	text-transform: uppercase
-	background-color: transparent
+	background-color: #fff
 	border: 2px solid $primary
 	padding: 17px 22px
 	cursor: pointer
@@ -22,6 +22,9 @@ body
 	font-size: 12px
 	padding: 25px 45px
 	+bold
+	text-decoration: none
+	&-order
+		background-color: lighten($primary, 5%)
 
 .bg-secondary
 	background-color: $bg-secondary
@@ -30,3 +33,11 @@ body
 	height: 80px
 	padding: 15px 30px
 	border: 1px solid #dddddd
+
+.section
+	padding: 100px 0
+	&-title
+		font-size: 30px
+		text-transform: uppercase
+		text-align: center
+		+bold

@@ -11,7 +11,10 @@
 	.navbar
 		&__mobile, &__landline
 			display: none
+	.hero
+		padding: 40px 0
 	.offer
+		padding-bottom: 60px
 		&-block
 			background-image: none
 			padding: 40px
@@ -23,6 +26,11 @@
 		&__input
 			border-right-width: 1px
 			margin-bottom: 15px
+	.features
+		padding: 50px 0
+		&__item
+			flex-basis: 50%
+			margin-top: 20px
 
 @media all and (max-width: 768px)
 	.container
@@ -31,7 +39,6 @@
 	.hero
 		background-size: 100%
 		background-position: top right
-		padding: 40px 0
 		&__title
 			font-size: 1.58rem
 			max-width: 250px
@@ -50,6 +57,10 @@
 				height: 50px
 			&__button
 				height: auto
+	.catalog
+		padding: 40px 30px
+		&__item
+			flex-basis: 100%
 
 @media all and (max-width: 576px)
 	.logo
@@ -64,3 +75,8 @@
 			margin-bottom: 20px
 		&-button
 			height: 60px
+	.features
+		&__item
+			flex-basis: 100%
+	.catalog
+		padding: 40px 0
