@@ -50,6 +50,13 @@
 			justify-content: center
 		&__item
 			margin: 10px
+	.step
+		flex-basis: 33%
+		&::before
+			display: none
+		&s-wrap
+			flex-wrap: wrap
+		
 
 @media all and (max-width: 768px)
 	.container
@@ -86,6 +93,9 @@
 	.price
 		padding-top: 40px
 		padding-bottom: 40px
+	.steps
+		padding-top: 40px
+		padding-bottom: 40px
 		
 
 @media all and (max-width: 576px)
@@ -113,3 +123,5 @@
 		&__title
 			text-align: center
 			padding: 0 50px
+	.step
+		flex-basis: 100%
