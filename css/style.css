@@ -424,12 +424,75 @@ body {
   margin-top: 30px;
 }
 
+.blog__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog__title {
+  font-size: 24px;
+}
+
+.blog__link-more {
+  color: #507fe1;
+}
+
+.blog-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog__item {
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+  min-width: 265px;
+  text-align: center;
+  margin-top: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 7px 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 7px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.blog__image {
+  width: 100%;
+  height: 190px;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: 45% 5%;
+     object-position: 45% 5%;
+}
+
 @media all and (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
   .offer-block {
     background-position: center right -100px;
+  }
+  .blog-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 60px;
+  }
+  .blog__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 265px;
+    margin-right: 20px;
   }
 }
 
@@ -474,6 +537,14 @@ body {
         flex-basis: 50%;
     margin-top: 20px;
   }
+  .blog-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog__item {
+    margin: 10px;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -515,6 +586,9 @@ body {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .blog-wrap {
+    padding: 0;
+  }
 }
 
 @media all and (max-width: 576px) {
@@ -545,6 +619,19 @@ body {
   }
   .catalog {
     padding: 40px 0;
+  }
+  .blog {
+    padding: 40px 0;
+  }
+  .blog__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog__title {
+    text-align: center;
+    padding: 0 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
