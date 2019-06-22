@@ -13,6 +13,10 @@ body
 	color: $primary
 	+bold
 	font-size: 12px
+	transition: .25s
+	&:hover
+		background-color: $primary
+		color: #fff
 
 .button
 	text-transform: uppercase
@@ -23,6 +27,9 @@ body
 	padding: 25px 45px
 	+bold
 	text-decoration: none
+	transition: .25s
+	&:hover
+		background-color: darken($primary, 5%)
 	&-order
 		background-color: lighten($primary, 5%)
 

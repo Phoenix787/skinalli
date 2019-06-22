@@ -39,6 +39,13 @@ body {
   color: #507fe1;
   font-family: 'Proxima Nova Semibold', serif;
   font-size: 12px;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.button-o:hover {
+  background-color: #507fe1;
+  color: #fff;
 }
 
 .button {
@@ -50,6 +57,12 @@ body {
   padding: 25px 45px;
   font-family: 'Proxima Nova Semibold', serif;
   text-decoration: none;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.button:hover {
+  background-color: #3a6fdd;
 }
 
 .button-order {
@@ -475,6 +488,65 @@ body {
      object-position: 45% 5%;
 }
 
+.price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price__item {
+  margin-top: 20px;
+  background-color: #fff;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price__item:hover .price__buttons {
+  z-index: 99;
+  bottom: -70px;
+}
+
+.price__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 7px;
+}
+
+.price__tag {
+  font-family: 'Proxima Nova Semibold', serif;
+}
+
+.price__buttons {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+.price__button {
+  padding: 15px 20px;
+  display: inline-block;
+}
+
 @media all and (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -493,6 +565,15 @@ body {
         flex-basis: 50%;
     max-width: 265px;
     margin-right: 20px;
+  }
+  .price-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 60px;
+  }
+  .price__item {
+    margin: 10px;
   }
 }
 
@@ -588,6 +669,10 @@ body {
   }
   .blog-wrap {
     padding: 0;
+  }
+  .price {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
