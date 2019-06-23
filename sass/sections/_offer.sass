@@ -3,9 +3,14 @@
 	&-block
 		padding: 80px
 		margin-top: -200px
-		background: #fff url('../../img/form-bg.png') no-repeat center right
-		background-size: contain
+		background: #fff 
 		box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.35)
+		&_calc-bg
+			background: #fff url('../../img/form-calc-bg.png') no-repeat center right
+			background-size: contain
+		&_price-bg
+			background: #fff url('../../img/form-price-bg.png') no-repeat center right
+			background-size: contain
 		
 		&__title
 			text-transform: uppercase
@@ -16,11 +21,13 @@
 			font-size: 21px
 			display: block
 			margin-bottom: 30px
+			max-width: 800px
 .form
 	&__row
 		display: flex
-		margin-bottom: 20px
+		margin-bottom: 30px
 		max-width: 900px
+		align-items: center
 		&:last-child
 			margin-bottom: 0
 	&__label
@@ -29,7 +36,7 @@
 		+bold
 		margin: 0 0 20px
 	&__group
-		flex-basis: 33.33%
+		flex-basis: 33%
 	&__input		
 		border-right-width: 0
 		width: 100%
@@ -55,4 +62,7 @@
 			position: absolute
 			left: 0
 			top: -1px
-		
+	&__policy
+		display: block
+		margin-left: 45px
+		font-size: 15px

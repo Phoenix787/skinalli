@@ -1,0 +1,29 @@
+.review
+  text-align: center
+  flex-basis: 32.5%
+  font-size: 15px
+  &s-wrap
+    display: flex
+    justify-content: space-between
+  &__text
+    background-color: #fff
+    font-style: italic
+    padding: 15px
+    position: relative
+    border-radius: 10px
+    &::after
+      content: ''
+      position: absolute
+      border: 10px solid transparent
+      border-top: 10px solid #ffffff
+      bottom: -20px
+      left: 50%
+      transform: translateX(-50%)
+  &__image
+    display: block
+    width: 70px
+    height: 70px
+    margin: 20px auto
+    border: 2px solid lighten($primary, 5%)
+    border-radius: 50%
+  

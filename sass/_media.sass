@@ -18,7 +18,7 @@
 			padding: 0 60px
 		&__item
 			margin: 10px
-
+	
 @media all and (max-width: 992px)
 	.container
 		max-width: 750px
@@ -37,9 +37,16 @@
 			flex-direction: column
 			&-checkbox
 				flex-direction: row
+		&__group
+			flex-basis: 100%
+			width: 100%
 		&__input
 			border-right-width: 1px
 			margin-bottom: 15px
+			width: 100%
+		&__policy
+			margin-left: 0
+			margin-top: 10px
 	.features
 		padding: 50px 0
 		&__item
@@ -56,7 +63,14 @@
 			display: none
 		&s-wrap
 			flex-wrap: wrap
-		
+	.fabric
+		&-wrap
+			flex-direction: column
+			justify-content: center
+			align-items: center
+		&__image
+			margin-right: 0
+			margin-bottom: 30px
 
 @media all and (max-width: 768px)
 	.container
@@ -96,6 +110,16 @@
 	.steps
 		padding-top: 40px
 		padding-bottom: 40px
+
+	.footer
+		&-wrap
+			flex-direction: column
+			align-items: center
+		&__contacts
+			text-align: left
+			margin-top: 30px
+		&__payments
+			margin-top: 40px
 		
 
 @media all and (max-width: 576px)
